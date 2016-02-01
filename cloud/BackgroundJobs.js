@@ -108,7 +108,7 @@ function parseTime(timeStr) {
 }
 
 // Parse job to fetch the latest episode. This runs periodically
-Parse.Cloud.job('fetchLatest', function(request, status) {
+Parse.Cloud.define('fetchLatest', function(request, status) {
   var today = new Date(),
       weekday = today.getDay();
   // If today is Friday or Saturday
@@ -186,7 +186,7 @@ Parse.Cloud.job('fetchLatest', function(request, status) {
 });
 
 // Job to fetch timestamps for all episodes, given data array of 1001tracklists URLs
-Parse.Cloud.job('setAllTimestamps', function(request, status) {
+Parse.Cloud.define('setAllTimestamps', function(request, status) {
   var promises = [];
 
   TRACKLIST_DATA.forEach(function(elem) {
