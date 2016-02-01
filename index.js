@@ -4,6 +4,7 @@
 var express = require('express');
 var ParseServer = require('parse-server').ParseServer;
 var http = require('http');
+require('dotenv').config();
 
 if (!process.env.DATABASE_URI) {
   console.log('DATABASE_URI not specified, falling back to localhost.');
