@@ -1,5 +1,5 @@
 {
-  "name": "parse-server-example",
+  "name": "heldeep-backend",
   "version": "1.0.0",
   "description": "An example Parse API server using the parse-server module",
   "main": "index.js",
