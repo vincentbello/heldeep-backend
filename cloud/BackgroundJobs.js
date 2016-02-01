@@ -9,7 +9,7 @@ var SoundCloud = {
 
 var SpecialTrackTypesRegex = /Heldeep Radio Cooldown|Heldeep Cooldown|Heldeep Radio Classic|Heldeep Classic|Heldeep Radio Halfbeat|Heldeep Halfbeat/;
 
-var TRACKLIST_DATA = require('cloud/tracklistData');
+var TRACKLIST_DATA = require('./tracklistData');
 
 /**
  * Format episode object from SC data
